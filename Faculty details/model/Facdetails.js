@@ -1,0 +1,38 @@
+const mongoose=require("mongoose")
+const postSchema=mongoose.Schema({
+    Name:{
+        type:String,
+        required:true
+    },
+    Gender:{
+        type:String,
+        required:true
+    },
+    EmailId:{
+        type:String,
+        required:true
+    },
+    Phonenumber:{
+        type:Number,
+        required:true
+    },
+    Department:{
+        type:String,
+        required:true
+    },
+    Qualification:{
+        type:String,
+        required:true
+    },
+    Designation:{
+        type:String,
+        required:true
+    },
+    ProffesionalExperience:{
+        type:Number,
+        required:true
+    }
+},
+  {collection:"posts"}
+)
+module.exports=mongoose.model("Facultydetails",postSchema)
